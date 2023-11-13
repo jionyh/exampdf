@@ -35,9 +35,6 @@ export default function Home() {
     const page = pageNumber || 1;
     const nome = name || "";
 
-    /* const res = await fetch(
-      `https://cid.jiony.dev/api?page=${page}&name=${nome}&exam=${exam}`
-    ); */
     const res = await fetch(
       `http://localhost:3333/api?page=${page}&name=${nome}&exam=${exam}`
     );
